@@ -1,0 +1,23 @@
+{
+  "name": "percoban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ok.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyeaudia/Percoban.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joyeaudia/Percoban/issues"
+  },
+  "homepage": "https://github.com/joyeaudia/Percoban#readme",
+  "dependencies": {
+    "package": "^1.0.1"
+  }
+}
