@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    /* Reset default padding and margin */
+    box-sizing: border-box;
+}
+
+body {
+    /* Set up the background and font for the whole page */
+    background-color: #f8f6f9; /* A very light purple/off-white */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Hide scrollbars if content is too big */
+    margin: 0;
+}
+
+.panel-container {
+    /* Main container for the survey box */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(202, 17, 17, 0.3); /* Subtle shadow for depth */
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; 
+}
+
+.panel-container strong {
+    /* Styling for the main question text */
+    font-size: 900; /* Bold */
+    line-height: 20px;
+    margin-bottom: 20px;
+    display: block; /* Makes the margin-bottom work */
+}
+
+.rating-container {
+    /* Container for the three face ratings */
+    display: flex;
+    margin: 30px 0;
+}
+
+.rating {
+    /* Styling for each individual rating (face + text) */
+    flex: 1; /* Distribute space equally */
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 5px;
+    transition: transform 0.1s ease-in-out; /* Smooth hover effect */
+}
+
+.rating:hover,
+.rating.active {
+    /* Hover and active (selected) state styling */
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+}
+
+.rating:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.rating img {
+    /* Styling for the face icons */
+    width: 80px; /* Adjust size of the icon */
+    display: flex;
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; 
+}
+
+.rating small {
+    /* Styling for the text below the face */
+    color: #555;
+    display: block; /* Puts the text on its own line */
+    margin-top: 10px;
+}
+
+/* The following is for the 'Send Review' button, which is 
+    not in your current HTML but is visible in the image.
+    You'll need to add it to your HTML inside the #panel div 
+    but after the rating-container.
+    
+    <button class="btn" id="send">Send Review</button>
+*/
+.btn {
+    background-color: #302d2b;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:focus {
+    /* Simple focus state for accessibility */
+    outline: 0;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
